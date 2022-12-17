@@ -1,0 +1,46 @@
+{
+  "name": "yaml-extra",
+  "version": "1.0.0",
+  "description": "yaml-extra contains methods that aren't included in the yaml package. Such load, dump, create, read, write, copy, and remove.",
+  "engines": {
+    "node": ">=14.14"
+  },
+  "homepage": "https://github.com/iamando/yaml-extra",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamando/yaml-extra"
+  },
+  "keywords": [
+    "yaml",
+    "file",
+    "write",
+    "copy",
+    "extra",
+    "read",
+    "delete",
+    "remove",
+    "touch",
+    "create",
+    "output",
+    "move",
+    "promise",
+    "dump",
+    "load"
+  ],
+  "author": "iamando <iamando@tuta.io>",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib/"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
+}
