@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "interface-name-prefix": "off",
+    "explicit-function-return-type": "off",
+    "explicit-module-boundary-types": "off",
+    "no-unused-vars": "error",
+    "consistent-type-definitions": "off",
+    "no-undef": "error",
+    "no-use-before-define": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.js"],
+      "rules": {
+        "no-shadow": "off",
+        "no-undef": "off",
+        "semi": 0
+      }
+    }
+  ]
+}
