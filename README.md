@@ -1,15 +1,22 @@
 # YAML: extra
 
+![build](https://github.com/iamando/yaml-extra/workflows/build/badge.svg)
+![license](https://img.shields.io/github/license/iamando/yaml-extra?color=success)
+![codebase](https://github.com/iamando/yaml-extra/workflows/codebase/badge.svg)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 `yaml-extra` contains methods that aren't included in the `yaml` package. Such create, read, write, copy, and remove.
 
 ## Installation
 
-    npm install yaml-extra
+```bash
+npm install yaml-extra
+```
 
 ## Usage
 
 ```js
-const yaml = require("yaml-extra");
+const yaml = require('yaml-extra')
 ```
 
 ## Sync vs Async vs Async/Await
@@ -23,39 +30,39 @@ Also Async/Await will throw an error if one occurs.
 Example:
 
 ```js
-const yaml = require("yaml-extra");
+const yaml = require('yaml-extra')
 
 // Async with promises:
 yaml
-  .write("/tmp/myfile", { foo: bar })
-  .then(() => console.log("success!"))
-  .catch((err) => console.error(err));
+  .write('/tmp/myfile', { foo: bar })
+  .then(() => console.log('success!'))
+  .catch((err) => console.error(err))
 
 // Async with callbacks:
-yaml.write("/tmp/myfile", { foo: bar }, (err) => {
-  if (err) return console.error(err);
-  console.log("success!");
-});
+yaml.write('/tmp/myfile', { foo: bar }, (err) => {
+  if (err) return console.error(err)
+  console.log('success!')
+})
 
 // Sync:
 try {
-  yaml.writeSync("/tmp/myfile", { foo: bar });
-  console.log("success!");
+  yaml.writeSync('/tmp/myfile', { foo: bar })
+  console.log('success!')
 } catch (err) {
-  console.error(err);
+  console.error(err)
 }
 
 // Async/Await:
 async function writeFile() {
   try {
-    await yaml.write("/tmp/myfile", { foo: bar });
-    console.log("success!");
+    await yaml.write('/tmp/myfile', { foo: bar })
+    console.log('success!')
   } catch (err) {
-    console.error(err);
+    console.error(err)
   }
 }
 
-writeFile();
+writeFile()
 ```
 
 ## Methods
