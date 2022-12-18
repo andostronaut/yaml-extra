@@ -1,0 +1,30 @@
+name: assign
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  assign-reviewers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: delivery-much/actions-assigner@v1
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          reviewers: iamando
+
+  assign-labels:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          labels: |
+            automated
+            pull-request
