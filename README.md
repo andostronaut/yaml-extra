@@ -1,6 +1,6 @@
-# yaml-extra
+# YAML: extra
 
-`yaml-extra` contains methods that aren't included in the `yaml` package. Such load, dump, create, read, write, copy, and remove.
+`yaml-extra` contains methods that aren't included in the `yaml` package. Such create, read, write, copy, and remove.
 
 ## Installation
 
@@ -62,8 +62,6 @@ writeFile();
 
 ### Async
 
-- [load](docs/load.md)
-- [dump](docs/dump.md)
 - [create](docs/create.md)
 - [read](docs/read.md)
 - [copy](docs/copy.md)
@@ -72,8 +70,6 @@ writeFile();
 
 ### Sync
 
-- [loadSync](docs/load-sync.md)
-- [dumpSync](docs/dump-sync.md)
 - [createSync](docs/create-sync.md)
 - [readSync](docs/read-sync.md)
 - [copySync](docs/copy-sync.md)
