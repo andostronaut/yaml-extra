@@ -1,0 +1,9 @@
+{
+  "line-length": {
+    "line_length": 150,
+    "tables": false,
+    "code_blocks": false
+  },
+  "no-inline-html": false,
+  "first-line-h1": false
+}
