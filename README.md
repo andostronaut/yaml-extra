@@ -2,7 +2,6 @@
 
 ![build](https://github.com/iamando/yaml-extra/workflows/build/badge.svg)
 ![license](https://img.shields.io/github/license/iamando/yaml-extra?color=success)
-![codebase](https://github.com/iamando/yaml-extra/workflows/codebase/badge.svg)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 `yaml-extra` contains methods that aren't included in the `yaml` package. Such create, read, write, copy, and remove.
