@@ -4,11 +4,23 @@ Create a yaml file.
 
 - `dest` `<String>` Note that `dest` is a path for yaml file created.
 
-## Example:
+## Example
 
 ```js
-const yaml = require("yaml-extra");
+const yaml = require('yaml-extra')
 
 // create file
-yaml.createSync("/tmp/myfile");
+yaml.createSync('/tmp/myfile')
+
+// With async/await:
+async function example() {
+  try {
+    const res = await yaml.create('/tmp/myfile')
+    console.log('success!', res)
+  } catch (err) {
+    console.error(err)
+  }
+}
+
+example()
 ```
