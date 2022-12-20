@@ -15,7 +15,7 @@ yaml.createSync('/tmp/myfile')
 // With async/await:
 async function example() {
   try {
-    const res = await yaml.create('/tmp/myfile')
+    const res = await yaml.createSync('/tmp/myfile')
     console.log('success!', res)
   } catch (err) {
     console.error(err)
