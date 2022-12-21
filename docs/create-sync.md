@@ -13,9 +13,9 @@ const yaml = require('yaml-extra')
 yaml.createSync('/tmp/myfile')
 
 // With async/await:
-async function example() {
+function example() {
   try {
-    const res = await yaml.createSync('/tmp/myfile')
+    const res = yaml.createSync('/tmp/myfile')
     console.log('success!', res)
   } catch (err) {
     console.error(err)
