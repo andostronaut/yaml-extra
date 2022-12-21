@@ -34,19 +34,25 @@ const yaml = require('yaml-extra')
 // Async with promises:
 yaml
   .write('/tmp/myfile', { foo: bar })
-  .then(() => console.log('success!'))
+  .then((doc) => console.log(doc))
   .catch((err) => console.error(err))
 
 // Async with callbacks:
-yaml.write('/tmp/myfile', { foo: bar }, (err) => {
-  if (err) return console.error(err)
-  console.log('success!')
-})
+yaml.write(
+  '/tmp/myfile',
+  { foo: bar },
+  (doc) => {
+    console.log(doc)
+  },
+  (err) => {
+    console.error(err)
+  }
+)
 
 // Sync:
 try {
-  yaml.writeSync('/tmp/myfile', { foo: bar })
-  console.log('success!')
+  const doc = yaml.writeSync('/tmp/myfile', { foo: bar })
+  console.log(doc)
 } catch (err) {
   console.error(err)
 }
@@ -54,8 +60,8 @@ try {
 // Async/Await:
 async function writeFile() {
   try {
-    await yaml.write('/tmp/myfile', { foo: bar })
-    console.log('success!')
+    const doc = await yaml.write('/tmp/myfile', { foo: bar })
+    console.log(doc)
   } catch (err) {
     console.error(err)
   }
