@@ -1,4 +1,4 @@
-# create(src[, callback])
+# create(src[, successCallback, errorCallback])
 
 Create a yaml file.
 

@@ -1,6 +1,6 @@
 # createSync(src)
 
-Create a yaml file.
+Create a yaml file in sync.
 
 - `dest` `<String>` Note that `dest` is a path for yaml file created.
 
