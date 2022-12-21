@@ -1,8 +1,11 @@
-# readSync(src)
+# readSync(src[, options])
 
-read a yaml file.
+read a yaml file in sync.
 
 - `src` `<String>` Note that `src` is a path for yaml file to read.
+- `options` `<Object>`
+  - `encoder` `<String>`
+  - `dump` `<Boolean>`
 
 ## Example
 
@@ -13,9 +16,9 @@ const yaml = require('yaml-extra')
 yaml.readSync('/tmp/myfile')
 
 // With async/await:
-async function example() {
+function example() {
   try {
-    const res = await yaml.readSync('/tmp/myfile')
+    const res = yaml.readSync('/tmp/myfile')
     console.log(res)
   } catch (err) {
     console.error(err)
