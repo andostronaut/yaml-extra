@@ -1,4 +1,4 @@
-# read(src[, callback])
+# read(src[, options, successCallback, errorCallback])
 
 Read a yaml file.
 
