@@ -3,8 +3,8 @@
 Create a yaml file.
 
 - `dest` `<String>` Note that `dest` is a path for yaml file created.
-- `callback` `<Function>`
-  - `err` `<Error>`
+- `successCallback` `<Function>`
+- `errorCallback` `<Function>`
 
 ## Example
 
@@ -12,16 +12,21 @@ Create a yaml file.
 const yaml = require('yaml-extra')
 
 // With a callback:
-yaml.create('/tmp/myfile', (err) => {
-  if (err) return console.error(err)
-  console.log('success!')
-}) // create yaml file
+yaml.create(
+  '/tmp/myfile',
+  (res) => {
+    console.log(res)
+  },
+  (err) => {
+    console.error(err)
+  }
+) // create yaml file
 
 // With Promises:
 yaml
   .create('/tmp/myfile')
-  .then(() => {
-    console.log('success!')
+  .then((res) => {
+    console.log(res)
   })
   .catch((err) => {
     console.error(err)
@@ -30,8 +35,8 @@ yaml
 // With async/await:
 async function example() {
   try {
-    await yaml.create('/tmp/myfile')
-    console.log('success!')
+    const res = await yaml.create('/tmp/myfile')
+    console.log(res)
   } catch (err) {
     console.error(err)
   }
