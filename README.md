@@ -74,13 +74,13 @@ writeFile()
 
 ## Methods
 
-| Async                      | Sync                                |
-| -------------------------- | ----------------------------------- |
-| - [create](docs/create.md) | - [createSync](docs/create-sync.md) |
-| - [read](docs/read.md)     | - [readSync](docs/read-sync.md)     |
-| - [copy](docs/copy.md)     | - [copySync](docs/copy-sync.md)     |
-| - [write](docs/write.md)   | - [writeSync](docs/write-sync.md)   |
-| - [remove](docs/remove.md) | - [removeSync](docs/remove-sync.md) |
+| Async                    | Sync                              |
+| ------------------------ | --------------------------------- |
+| [create](docs/create.md) | [createSync](docs/create-sync.md) |
+| [read](docs/read.md)     | [readSync](docs/read-sync.md)     |
+| [copy](docs/copy.md)     | [copySync](docs/copy-sync.md)     |
+| [write](docs/write.md)   | [writeSync](docs/write-sync.md)   |
+| [remove](docs/remove.md) | [removeSync](docs/remove-sync.md) |
 
 ## Support
 
