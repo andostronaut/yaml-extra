@@ -5,11 +5,28 @@
   "engines": {
     "node": ">=14.14"
   },
-  "homepage": "https://github.com/iamando/yaml-extra",
+  "sideEffects": false,
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "author": {
+    "name": "iamando",
+    "email": "iamando@tuta.io"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamando/yaml-extra"
+    "url": "https://github.com/iamando/yaml-extra.git"
   },
+  "bugs": {
+    "url": "https://github.com/iamando/yaml-extra/issues"
+  },
+  "homepage": "https://github.com/iamando/yaml-extra#readme",
+  "files": [
+    "lib",
+    "docs"
+  ],
   "keywords": [
     "yaml",
     "file",
@@ -27,17 +44,6 @@
     "dump",
     "load"
   ],
-  "author": "iamando <iamando@tuta.io>",
-  "license": "MIT",
-  "main": "./lib/index.js",
-  "exports": {
-    ".": "./lib/index.js"
-  },
-  "files": [
-    "lib/",
-    "docs/"
-  ],
-  "sideEffects": false,
   "scripts": {
     "lint": "eslint \"./**/*.{js,ts}\"",
     "format": "prettier --write \"./**/*.{js,ts}\"",
