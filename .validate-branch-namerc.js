@@ -1,5 +1,0 @@
-module.exports = {
-  pattern:
-    '^(project-[a-z\\-]+|master|develop|preprod){1}$|^(epic|feature|bugfix|hotfix|chore|experiment|design)\\/([A-Z]{2,4})-([\\dX]+)_([\\w-]+?)$',
-  errorMsg: 'Branch name format : <type>/<issue_ID>_<name>'
-}
