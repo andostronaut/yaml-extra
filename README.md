@@ -96,4 +96,4 @@ yaml-extra is an MIT-licensed open source project. It can grow thanks to the spo
 
 yaml-extra is [MIT licensed](LICENSE).
 
-Copyright (c) 2022 [iamando](https://github.com/iamando)
+Copyright (c) 2023 [iamando](https://github.com/iamando)
