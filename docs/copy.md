@@ -2,8 +2,8 @@
 
 Copy a yaml file.
 
-- `src` `<String>` Note that `src` is a path for yaml file to write.
-- `dest` `<String>` Note that `dest` is a path for yaml file copyd.
+- `src` `<String>` Note that `src` is a path for yaml file to copy.
+- `dest` `<String>` Note that `dest` is a path for yaml file copied.
 - `successCallback` `<Function>`
 - `errorCallback` `<Function>`
 
