@@ -11,7 +11,7 @@ jobs:
 
       matrix:
         node-version:
-          - 16.16.0
+          - 18.15.0
 
     steps:
       - uses: actions/checkout@v3
@@ -28,6 +28,6 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
 
-      - run: npm install --registry=https://registry.npmjs.org
+      - run: npm install
 
       - run: npm run lint
