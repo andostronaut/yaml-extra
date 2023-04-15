@@ -2,7 +2,7 @@
 
 write a yaml file in sync.
 
-- `src` `<String>` Note that `dest` is a path for yaml file to write.
+- `src` `<String>` Note that `src` is a path for yaml file to write.
 - `content` `<Object>`
 - `options` `<Object>`
   - `encoder` `<String>`
