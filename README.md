@@ -6,7 +6,7 @@
 ![npm](https://img.shields.io/npm/v/yaml-extra)
 ![release](https://img.shields.io/github/release-date/iamando/yaml-extra)
 
-`yaml-extra` contains methods that aren't included in the `yaml` package. Such read, write
+`yaml-extra` contains methods that aren't included in the `yaml` package. Such read(), write()
 
 ## Installation
 
@@ -74,10 +74,15 @@ writeFile()
 
 ## Methods
 
-| Async                  | Sync                            |
-| ---------------------- | ------------------------------- |
-| [read](docs/read.md)   | [readSync](docs/read-sync.md)   |
-| [write](docs/write.md) | [writeSync](docs/write-sync.md) |
+## Async
+
+- [read](docs/read.md)
+- [write](docs/write.md)
+
+## Sync
+
+- [readSync](docs/read-sync.md)
+- [writeSync](docs/write-sync.md)
 
 ## Support
 
