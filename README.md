@@ -32,11 +32,7 @@ Require the deps:
 
 ```js
 const yaml = require('yaml-extra')
-```
 
-Usage:
-
-```js
 // Async with promises:
 yaml
   .write('/file.yaml', { foo: bar })
