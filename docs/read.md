@@ -2,7 +2,7 @@
 
 Read a yaml file.
 
-- `src` `<String>` Note that `dest` is a path for yaml file to read.
+- `src` `<String>` Note that `src` is a path for yaml file to read.
 - `options` `<Object>`
   - `encoder` `<String>`
   - `dump` `<Boolean>`
