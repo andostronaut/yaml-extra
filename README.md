@@ -17,7 +17,7 @@ npm install yaml-extra
 ## Usage
 
 ```js
-const yaml = require('yaml-extra')
+const ye = require('yaml-extra')
 ```
 
 ## Sync vs Async vs Async/Await
@@ -31,16 +31,15 @@ Also Async/Await will throw an error if one occurs.
 Example:
 
 ```js
-const yaml = require('yaml-extra')
+const ye = require('yaml-extra')
 
 // Async with promises:
-yaml
-  .write('/file.yaml', { foo: 'bar' })
+ye.write('/file.yaml', { foo: 'bar' })
   .then((doc) => console.log(doc))
   .catch((err) => console.error(err))
 
 // Async with callbacks:
-yaml.write(
+ye.write(
   '/file.yaml',
   { foo: 'bar' },
   (doc) => {
@@ -53,7 +52,7 @@ yaml.write(
 
 // Sync:
 try {
-  const doc = yaml.writeSync('/file.yaml', { foo: 'bar' })
+  const doc = ye.writeSync('/file.yaml', { foo: 'bar' })
   console.log(doc)
 } catch (err) {
   console.error(err)
@@ -62,7 +61,7 @@ try {
 // Async/Await:
 async function writeFile() {
   try {
-    const doc = await yaml.write('/file.yaml', { foo: 'bar' })
+    const doc = await ye.write('/file.yaml', { foo: 'bar' })
     console.log(doc)
   } catch (err) {
     console.error(err)
