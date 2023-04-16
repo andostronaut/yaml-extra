@@ -28,7 +28,7 @@ Sync methods on the other hand will throw if an error occurs.
 
 Also Async/Await will throw an error if one occurs.
 
-Require the deps:
+Example:
 
 ```js
 const yaml = require('yaml-extra')
