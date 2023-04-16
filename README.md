@@ -74,12 +74,12 @@ writeFile()
 
 ## Methods
 
-## Async
+Async
 
 - [read](docs/read.md)
 - [write](docs/write.md)
 
-## Sync
+Sync
 
 - [readSync](docs/read-sync.md)
 - [writeSync](docs/write-sync.md)
