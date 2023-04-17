@@ -3,23 +3,19 @@
 read a yaml file in sync.
 
 - `src` `<String>` Note that `src` is a path for yaml file to read.
-- `options` `<Object>`
-  - `encoder` `<String>`
-  - `dump` `<Boolean>`
+- `options` `<Object>` Different options you can specify.
+  - `encoder` `<String>` By default encoder is utf-8, you can use your encoder.
+  - `dump` `<Boolean>` By default dump is false, you can set it to true.
 
 ## Example
 
 ```js
-const yaml = require('yaml-extra')
+const ye = require('yaml-extra')
 
-// read file
-yaml.readSync('/tmp/myfile')
-
-// With async/await:
 function example() {
   try {
-    const res = yaml.readSync('/tmp/myfile')
-    console.log(res)
+    const doc = ye.readSync('/file.yaml')
+    console.log(doc)
   } catch (err) {
     console.error(err)
   }
