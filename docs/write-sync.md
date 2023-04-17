@@ -13,22 +13,13 @@ write a yaml file in sync.
 ```js
 const ye = require('yaml-extra')
 
-# Default use
-
 function example() {
   try {
-    const doc = ye.writeSync('/file.yaml', { foo: 'bar' })
-    console.log(doc)
-  } catch (err) {
-    console.error(err)
-  }
-}
-
-# By overriding override params
-
-function example() {
-  try {
-    const doc = ye.writeSync('/file.yaml', { foo: 'bar' }, { override: true })
+    const doc = ye.writeSync(
+      '/file.yaml',
+      { foo: 'bar' }
+      // { override: true } # you can override to true , by default it's false
+    )
     console.log(doc)
   } catch (err) {
     console.error(err)
