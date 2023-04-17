@@ -3,33 +3,37 @@
 write a yaml file.
 
 - `src` `<String>` Note that `src` is a path for yaml file to write.
-- `content` `<Object>`
-- `options` `<Object>`
-  - `encoder` `<String>`
-  - `dump` `<Boolean>`
-- `successCallback` `<Function>`
-- `errorCallback` `<Function>`
+- `content` `<Object>` Content to write in yaml file.
+- `options` `<Object>` Different parameters you can specify.
+  - `encoder` `<String>` By default encoder is utf-8, you can use your encoder.
+  - `override` `<Boolean>` By default override is false, you can set it to true.
+- `successCallback` `<Function>` Callback for managing doc response.
+- `errorCallback` `<Function>` Callback for managing error.
 
 ## Example
 
 ```js
-const yaml = require('yaml-extra')
+const ye = require('yaml-extra')
 
 // With a callback:
-yaml.write(
-  '/tmp/myfile',
+ye.write(
+  '/file.yaml',
   { foo: 'bar' },
+  // { override: true } # you can override to true , by default it's false
   (res) => {
     console.log(res)
   },
   (err) => {
     console.error(err)
   }
-) // write yaml file
+)
 
 // With Promises:
-yaml
-  .write('/tmp/myfile', { foo: 'bar' })
+ye.write(
+  '/file.yaml',
+  { foo: 'bar' }
+  // { override: true } # you can override to true , by default it's false
+)
   .then((res) => {
     console.log(res)
   })
@@ -40,7 +44,11 @@ yaml
 // With async/await:
 async function example() {
   try {
-    const res = await yaml.write('/tmp/myfile', { foo: 'bar' })
+    const res = await ye.write(
+      '/file.yaml',
+      { foo: 'bar' }
+      // { override: true } # you can override to true , by default it's false
+    )
     console.log(res)
   } catch (err) {
     console.error(err)
