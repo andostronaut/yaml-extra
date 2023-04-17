@@ -3,20 +3,33 @@
 write a yaml file in sync.
 
 - `src` `<String>` Note that `src` is a path for yaml file to write.
-- `content` `<Object>`
-- `options` `<Object>`
-  - `encoder` `<String>`
-  - `dump` `<Boolean>`
+- `content` `<Object>` Content to write in yaml file
+- `options` `<Object>` Different parameters you can specify.
+  - `encoder` `<String>` By default encoder is utf-8, you can use your encoder
+  - `override` `<Boolean>` By default override is false, you can set it to true
 
 ## Example
 
 ```js
-const yaml = require('yaml-extra')
+const ye = require('yaml-extra')
+
+# Default use
 
 function example() {
   try {
-    const res = yaml.write('/tmp/myfile', { foo: 'bar' })
-    console.log(res)
+    const doc = ye.writeSync('/file.yaml', { foo: 'bar' })
+    console.log(doc)
+  } catch (err) {
+    console.error(err)
+  }
+}
+
+# By overriding override params
+
+function example() {
+  try {
+    const doc = ye.writeSync('/file.yaml', { foo: 'bar' }, { override: true })
+    console.log(doc)
   } catch (err) {
     console.error(err)
   }
