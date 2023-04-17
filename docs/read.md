@@ -1,35 +1,34 @@
 # read(src[, options, successCallback, errorCallback])
 
-Read a yaml file.
+read a yaml file.
 
 - `src` `<String>` Note that `src` is a path for yaml file to read.
-- `options` `<Object>`
-  - `encoder` `<String>`
-  - `dump` `<Boolean>`
-- `successCallback` `<Function>`
-- `errorCallback` `<Function>`
+- `options` `<Object>` Different options you can specify.
+  - `encoder` `<String>` By default encoder is utf-8, you can use your encoder.
+  - `dump` `<Boolean>` By default dump is false, you can set it to true.
+- `successCallback` `<Function>` Callback for managing doc response.
+- `errorCallback` `<Function>` Callback for managing error.
 
 ## Example
 
 ```js
-const yaml = require('yaml-extra')
+const ye = require('yaml-extra')
 
 // With a callback:
-yaml.read(
-  '/tmp/myfile',
-  (res) => {
-    console.log(res)
+ye.read(
+  '/file.yaml',
+  (doc) => {
+    console.log(doc)
   },
   (err) => {
     console.error(err)
   }
-) // read yaml file
+)
 
 // With Promises:
-yaml
-  .read('/tmp/myfile')
-  .then((res) => {
-    console.log(res)
+ye.read('/file.yaml')
+  .then((doc) => {
+    console.log(doc)
   })
   .catch((err) => {
     console.error(err)
@@ -38,8 +37,8 @@ yaml
 // With async/await:
 async function example() {
   try {
-    const res = await yaml.read('/tmp/myfile')
-    console.log(res)
+    const doc = await ye.read('/file.yaml')
+    console.log(doc)
   } catch (err) {
     console.error(err)
   }
