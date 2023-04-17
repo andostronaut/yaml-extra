@@ -31,18 +31,11 @@
     "yaml",
     "file",
     "write",
-    "copy",
     "extra",
     "read",
-    "delete",
-    "remove",
-    "touch",
-    "create",
     "output",
-    "move",
     "promise",
-    "dump",
-    "load"
+    "dump"
   ],
   "scripts": {
     "lint": "eslint \"./**/*.{js,ts}\"",
