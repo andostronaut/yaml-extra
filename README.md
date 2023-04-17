@@ -32,15 +32,19 @@ Example:
 
 ```js
 const ye = require('yaml-extra')
+const path = require('path')
+
+// Use path join for file path
+const filePath = path.join(__dirname, 'file.yaml')
 
 // Async with promises:
-ye.write('/file.yaml', { foo: 'bar' })
+ye.write(filePath, { foo: 'bar' })
   .then((doc) => console.log(doc))
   .catch((err) => console.error(err))
 
 // Async with callbacks:
 ye.write(
-  '/file.yaml',
+  filePath,
   { foo: 'bar' },
   (doc) => {
     console.log(doc)
@@ -52,7 +56,7 @@ ye.write(
 
 // Sync:
 try {
-  const doc = ye.writeSync('/file.yaml', { foo: 'bar' })
+  const doc = ye.writeSync(filePath, { foo: 'bar' })
   console.log(doc)
 } catch (err) {
   console.error(err)
@@ -61,7 +65,7 @@ try {
 // Async/Await:
 async function writeFile() {
   try {
-    const doc = await ye.write('/file.yaml', { foo: 'bar' })
+    const doc = await ye.write(filePath, { foo: 'bar' })
     console.log(doc)
   } catch (err) {
     console.error(err)
