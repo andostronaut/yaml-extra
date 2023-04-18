@@ -9,7 +9,8 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "exports": {
-    ".": "./lib/index.js"
+    ".": "./lib/index.js",
+    "./esm": "./lib/esm.mjs"
   },
   "author": {
     "name": "iamando",
