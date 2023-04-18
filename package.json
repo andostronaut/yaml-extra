@@ -45,8 +45,6 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "standard:check": "standard",
-    "standard:fix": "standard --fix",
     "release": "npm publish --follow-tags",
     "release:major": "npm version major && npm publish && git push --follow-tags",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
@@ -54,8 +52,7 @@
   },
   "devDependencies": {
     "jest": "^29.3.1",
-    "prettier": "^2.8.7",
-    "standard": "^17.0.0"
+    "prettier": "^2.8.7"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
