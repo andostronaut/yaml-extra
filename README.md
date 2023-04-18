@@ -26,8 +26,13 @@ const ye = require('yaml-extra')
 There is also an `yaml-extra/esm` import, that supports both default and named exports.
 
 ```js
-import ye from 'yaml-extra/esm'
 import { write, writeSync } from 'yaml-extra/esm'
+```
+
+Default exports are supported:
+
+```js
+import ye from 'yaml-extra/esm'
 ```
 
 ## Sync vs Async vs Async/Await
