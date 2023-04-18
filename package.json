@@ -24,8 +24,9 @@
   },
   "homepage": "https://github.com/iamando/yaml-extra#readme",
   "files": [
-    "lib",
-    "docs"
+    "lib/",
+    "docs/",
+    "!lib/**/__tests__/"
   ],
   "keywords": [
     "yaml",
