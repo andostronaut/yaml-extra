@@ -2,7 +2,6 @@
 
 ![build](https://github.com/iamando/yaml-extra/workflows/build/badge.svg)
 ![license](https://img.shields.io/github/license/iamando/yaml-extra?color=success)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![npm](https://img.shields.io/npm/v/yaml-extra)
 ![release](https://img.shields.io/github/release-date/iamando/yaml-extra)
 
@@ -16,8 +15,19 @@ npm install yaml-extra
 
 ## Usage
 
+### CommonJS
+
 ```js
 const ye = require('yaml-extra')
+```
+
+### ESM
+
+There is also an `yaml-extra/esm` import, that supports both default and named exports.
+
+```js
+import ye from 'yaml-extra/esm'
+import { write, writeSync } from 'yaml-extra/esm'
 ```
 
 ## Sync vs Async vs Async/Await
