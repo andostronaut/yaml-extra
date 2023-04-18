@@ -1,7 +1,7 @@
 {
   "name": "yaml-extra",
   "version": "1.0.0",
-  "description": "yaml-extra contains methods that aren't included in the yaml package. Such read, write",
+  "description": "yaml-extra contains methods that aren't included in the yaml package. Such read(), write()",
   "engines": {
     "node": ">=14.14"
   },
@@ -37,7 +37,7 @@
     "read",
     "output",
     "promise",
-    "dump"
+    "load"
   ],
   "scripts": {
     "lint": "prettier --check .",
