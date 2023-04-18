@@ -1,6 +1,6 @@
 {
   "name": "yaml-extra",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "yaml-extra contains methods such read(), write() that you can use easily to write or read a yaml file.",
   "engines": {
     "node": ">=14.14"
