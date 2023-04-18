@@ -1,11 +1,11 @@
-# YAML: extra
+# Yaml: extra
 
 ![build](https://github.com/iamando/yaml-extra/workflows/build/badge.svg)
 ![license](https://img.shields.io/github/license/iamando/yaml-extra?color=success)
 ![npm](https://img.shields.io/npm/v/yaml-extra)
 ![release](https://img.shields.io/github/release-date/iamando/yaml-extra)
 
-`yaml-extra` contains methods that aren't included in the `yaml` package. Such read(), write()
+`yaml-extra` contains methods such read(), write() that you can use easily to write or read a yaml file.
 
 ## Installation
 
