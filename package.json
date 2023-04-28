@@ -62,6 +62,6 @@
     "os": "^0.1.2",
     "path": "^0.12.7",
     "universalify": "^2.0.0",
-    "write-yaml-file": "^4.2.0"
+    "write-yaml-file": "^5.0.0"
   }
 }
